@@ -9,16 +9,13 @@ package com.lemmon.hunter.structure;
 public class Node {
     Object data;
     Node next;
-    public Node head;
 
     public Node(Object obj){
         this.data = obj;
     }
 
-    public void insert(Object data){
-        Node node = new Node(data);
-        node.next = head;
-        head = node;
-    }
+
+
+
 
 }
