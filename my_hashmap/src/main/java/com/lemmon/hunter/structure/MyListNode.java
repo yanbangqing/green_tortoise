@@ -23,15 +23,17 @@ public class MyListNode {
         if(index > size) return;
         if(index < size) index = 0;
         Node pre = head;
-        for(int i = 0;i < index;i++) pre = pre.next;
-        if(pre.next == null){
-            pre.next = node;
-
-        }else{
-            node.next = pre.next;
-            pre.next = node;
+        for(int i = 0;i < index;i++) {
+            if(pre.next == null){
+                pre.next = node;
+            }else{
+                pre = pre.next;
+                if( i == index -1 ){
+                    node.next = pre.next;
+                    pre.next = node;
+                }
+            }
         }
         ++size;
-
     }
 }

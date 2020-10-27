@@ -1,6 +1,9 @@
 import com.lemmon.hunter.structure.MyListNode;
 import com.lemmon.hunter.structure.Node;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author yanbangqing
  * @version V1.0
@@ -19,7 +22,14 @@ public class Test {
         myListNode.add(node2);
         myListNode.add(node3);
         myListNode.add(node4);
-        System.out.println(myListNode);
+//        System.out.println(JSON.toJSONString(myListNode));
+//        Map map = new HashMap();
+//        map.put("1", "1");
+//        System.out.println();
+
+    }
+
+    public void tThread() {
 
 
     }

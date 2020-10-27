@@ -9,13 +9,9 @@ package com.lemmon.hunter.structure;
 public class Node {
     Object data;
     Node next;
-
+    int h;
+    Object key;
     public Node(Object obj){
         this.data = obj;
     }
-
-
-
-
-
 }
